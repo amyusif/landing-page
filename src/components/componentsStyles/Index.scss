@@ -1,0 +1,14 @@
+@import './Navbar.scss', './Card.scss', './App.scss';
+
+$primary-color: #C0EEE4;
+$secondary-color: #10A19D;
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: $secondary-color;
+}

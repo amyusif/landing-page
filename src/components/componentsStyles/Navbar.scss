@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+
+
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    font-family: 'Roboto', sans-serif;
+    color: #344D67;
+    font-size: 3rem;
+    padding: 0 0 10px 0;
+    border-bottom: 3px solid #7D6E83;
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.search input {
+    width: 400px;
+    padding: 16px;
+    border: none;
+    border-radius: 20px;
+    font-size: 19px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.search input:focus {
+    outline: none;
+}
