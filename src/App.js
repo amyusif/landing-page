@@ -1,26 +1,33 @@
-import Navbar from "./components/Navbar";
-import Card from "./components/Card";
+import React, { useState } from "react";
 import { robots } from "./components/4.2 robots";
-
-
-
+import CardList from "./components/CardList";
+import Search from "./components/Search";
 
 const App = () => {
+  const [search, setSearch] = useState("");
 
-  const allCards = robots.map((items, index) => {
-    return <Card key={index}
-     name={robots[index].name} 
-     email={robots[index].email} id={robots[index].id}/>
-  })
+  const searchRobots = (e) => {
+    setSearch(e.target.value);
+
+    console.log(Search);
+  };
+
+  const filterRobots = robots.filter((robots) => {
+    return (
+      robots.name.toLowerCase().includes(search.toLowerCase()) ||
+      robots.email.toLowerCase().includes(search.toLowerCase())
+    );
+  });
 
   return (
     <>
-    <Navbar />
-    <div className="cards-container">
-      {allCards}
-    </div>
-
+      <h1>ROBOFRIENDS</h1>
+      <Search searchFil={searchRobots} />
+      <div className="card">
+        <CardList robots={filterRobots} />
+      </div>
     </>
   );
-  }
+};
+
 export default App;

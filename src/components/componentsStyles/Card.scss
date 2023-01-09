@@ -1,38 +1,37 @@
-
-.card-container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    width: 285px;
-    height: auto;
-    margin: 40px 20px 20px 20px;
-    background-color: #227C70;
-    border: none;
-    border-radius: 7px;
-
-    box-shadow: 0px 0px 10px 0px rgba(0,0,0,.8);
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-.image-container{
-    height: 70%;
-    width: auto;
+.card-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #066163;
+  border: none;
+  border-radius: 20px;
+  margin: 20px;
+  width: 300px;
+  gap: 5px;
+  flex-wrap: wrap;
 }
 
-.card-container:hover{
-    transition: all .5s ease-in-out;;
-    transform: scale(1.1);
+.card-container:hover {
+  // transition: all 0.5s ease-in-out;
+  transform: scale(1.1);
 }
 
-.name{
-    margin-top: 15px;
-    text-align: center;
-    padding: 5px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+.name {
+  margin-top: 15px;
+  text-align: center;
+  padding: 5px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.email{
-    text-align: center;
-    padding: 5px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+.email {
+  text-align: center;
+  padding: 5px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
